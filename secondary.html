@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="gov.css">
+<head>
+	<meta charset="ETF-8">
+	<title>Tracker Secondary View</title>
+</head>
+<body>
+	 <table>
+    <tr>
+      <th>Task Name</th>
+      <th>Task Date</th>
+      <th>Departments Completed</th>
+      <th>Departments In Progress</th>
+     </tr>
+    <tr><td> Strategic Plan Community of Practice</td> <td> Jan 6-Jan 31</td><td> ADOA, AZDA, AHCCCS, DCS, ACA, ADCRR, OEO, DES, DEMA, DEQ, DFFM</td><td></td></tr>
+    <tr><td> Individual Pre Work</td> <td> Feb 3- Mar 31</td><td> ADOA, AZDA, AHCCCS, DCS, ACA, ADCRR, OEO, DES, DEMA, DEQ, DFFM</td><td></td></tr>
+    <tr><td> 1st Draft Due</td> <td> Mar 31</td><td> ADOA, AZDA, AHCCCS, DCS, ACA, ADCRR, OEO, DES, DEMA, DEQ, DFFM</td><td></td></tr>
+    <tr><td> Touchpoint Meetings</td> <td> Apr 7-18</td><td> ADOA, AZDA, AHCCCS, DCS, ACA, DES, DEMA, DEQ, DFFM</td><td>ADCRR, OEO </td></tr>
+    <tr class="clickable" data-href="sample.html"><td> Breakthrough Projects Due</td> <td> Apr 18</td><td> ADOA, AZDA, AHCCCS, DCS, ACA, ADCRR, OEO, DES, DEMA, DEQ, DFFM</td><td></td></tr>
+    <tr><td> TODAY</td> <td> TODAY<td> ADOA, AZDA, AHCCCS, DCS, ACA DES, DEMA, DEQ, DFFM</td><td>ADCRR, OEO</td></tr>
+    <tr><td> 2nd Draft Due</td> <td> May 30</td><td></td><td> ADOA, AZDA, AHCCCS, DCS, ACA, ADCRR, OEO, DES, DEMA, DEQ, DFFM</td></tr>
+    <tr><td> Second Touchpoint Meeting</td> <td> June 9-20</td><td></td><td> ADOA, AZDA, AHCCCS, DCS, ACA, ADCRR, OEO, DES, DEMA, DEQ, DFFM</td></tr>
+    <tr><td> Final Draft Due</td> <td> July 11</td><td></td><td> ADOA, AZDA, AHCCCS, DCS, ACA, ADCRR, OEO, DES, DEMA, DEQ, DFFM</td></tr>
+    <tr><td> OSPB Feedback</td> <td> July 14-July 30</td><td></td><td> ADOA, AZDA, AHCCCS, DCS, ACA, ADCRR, OEO, DES, DEMA, DEQ, DFFM</td></tr>
+    <tr><td> Noify Agencies</td> <td> July 31</td><td> </td><td> ADOA, AZDA, AHCCCS, DCS, ACA, ADCRR, OEO, DES, DEMA, DEQ, DFFM</td></tr>
+    <tr><td> Coordinate With Agencies Regarding Startegic Outcomes</td> <td> Aug 1-15</td><td></td><td> ADOA, AZDA, AHCCCS, DCS, ACA, ADCRR, OEO, DES, DEMA, DEQ, DFFM</td></tr>
+    <tr><td> Review Agency SPs</td> <td> Aug 15- Sept.1</td><td></td><td> ADOA, AZDA, AHCCCS, DCS, ACA, ADCRR, OEO, DES, DEMA, DEQ, DFFM</td></tr>
+</td></tr></table><br>
+<button onclick="window.location.href='Additional_Task.html'" class="btn">Create Micro Task</button>
+
+
+
+
+</body>
+
+<script>
+  // Make sure script runs after page loads
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".clickable").forEach(row => {
+      row.addEventListener("click", () => {
+        const href = row.dataset.href;
+        if (href) {
+          console.log("Navigating to:", href);
+          window.location.href = href;
+        }
+      });
+    });
+  });
+</script>
+</html>

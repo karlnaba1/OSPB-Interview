@@ -1,0 +1,40 @@
+body{
+  background: url("C:/Users/nabaa/Downloads/asu.jpeg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  height:100vw;
+}
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 85%;
+  background-color: #97233F;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  overflow: hidden;
+  color:#FAF3E0;
+  opacity:95%;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #004c97;
+  color: #FAF3E0;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #FFB612;
+  color:black;
+}
+
+
+#head {
+  text-align:center;
+}

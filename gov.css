@@ -1,0 +1,45 @@
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 85%;
+  background-color: #4C6FAE;
+  overflow: hidden;
+  color:white;
+}
+
+th, td {
+
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #BF0A30;
+  color: white;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #EAD7C0;
+  color:black;
+}
+
+tr:hover {
+  background-color: #8A9A5B;
+}
+body {
+  background-image: url("C:/Users/nabaa/Downloads/cactus.jpg");  /* path to your image */
+  background-size: cover;         /* makes it fill the screen */
+  background-position: center;    /* centers it */
+  background-repeat: no-repeat;   /* avoids tiling */
+  background-attachment: fixed;   /* keeps it still when scrolling (optional) */
+}
+button{
+  font-weight: bold;
+  background-color:gray;
+  transform:scale(2);
+  position:relative;
+  left:40%;
+  border-radius:5px;
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Tracker – Create New Task</title>
+  <link rel="stylesheet" href="Task.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <h1>Create New Micro Task</h1>    <p class="subtitle">This Will Be Sent To the Head of The Respective Department.</p>
+
+    <form method="post">
+      <div>
+        <label for="name">Task Name</label>
+        <input id="name" name="name" type="text" required />
+      </div>
+
+      <div>
+        <label for="desc">Task Description</label>
+        <textarea id="desc" name="comments" placeholder="Reduce Budget by $1,000,000"></textarea>
+      </div>
+
+      <div>
+        <label for="urgency">Urgency Level</label>
+        <select id="urgency" name="urgency" required>
+          <option disabled selected>Select priority</option>
+          <option>Low Priority</option>
+          <option>Medium Priority</option>
+          <option>High Priority</option>
+          <option>Critical</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="department">Department</label>
+        <select id="department" name="department" required>
+          <option disabled selected>Select department</option>
+          <option>Administration</option>
+          <option>Agriculture</option>
+          <option>Arizona Health Care Cost Containment System</option>
+          <option>Child Safety</option>
+          <option>Commerce Authority</option>
+          <option>Corrections</option>
+          <option>Economic Opportunity</option>
+          <option>Economic Security</option>
+          <option>Emergency and Military Affairs</option>
+          <option>Environmental Quality</option>
+          <option>Forestry and Fire Management</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="notification">Notification Message</label>
+        <textarea id="notification" name="notification">***NEW TASK CREATED - ACTION MAY BE REQUIRED*** 
+The Office of Strategic Planning has added a new task to your portal. Please open your portal to view changes to your task compliance sheet. 
+For inquiries, or if you believe this to be a mistake, contact us at budgets@budgets.gov
+        </textarea>
+      </div>
+
+      <input type="submit" value="Submit Task" />
+    </form>
+  </div>
+</body>
+</html>
