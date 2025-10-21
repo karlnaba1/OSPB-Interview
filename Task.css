@@ -7,7 +7,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("C:/Users/nabaa/Downloads/AZ.jpg");
+  background: url("AZ.jpg");
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
@@ -95,4 +95,5 @@ input[type="submit"]:hover {
 
 input[type="submit"]:active {
   transform: scale(0.98);
+
 }
